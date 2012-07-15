@@ -71,7 +71,7 @@
 }
 
 \newcommand{\acro}[1]{
-  {\small\textsc{#1}}\hspace{-3pt}
+  \hspace{-3pt}{\small\textsc{#1}}\hspace{-3pt}
 }
 
 % Document
@@ -85,7 +85,7 @@
 \begin{tabular}{p{0.007\linewidth}l}
  & {\small \textcolor{\titlecolor}{920 TOEIC}} \\
  & {\small \textcolor{\bulletcolor}{\url{http://uk.linkedin.com/in/quentincasasnovas}}} \\
- & {\small \textcolor{\bulletcolor}{French nationality, 25 years old}} \\
+ & {\small \textcolor{\bulletcolor}{French nationality, 26 years old}} \\
  & {\small \textcolor{\bulletcolor}{quentin.casasnovas@gmail.com}} \\
  & {\small \textcolor{\bulletcolor}{39 \acro{Steamship House} - \acro{Gas Ferry Road}}} \\
  & {\small \textcolor{\bulletcolor}{BS1 6GL \acro{Bristol - England}}} \\
@@ -94,7 +94,7 @@
 \end{minipage}
 \begin{minipage}{0.54\linewidth}
 \begin{flushright}
-%\includegraphics[scale=0.07]{id.png}
+\includegraphics[scale=0.07]{id.png}
 \end{flushright}
 \end{minipage}
 
@@ -110,7 +110,7 @@ complex interactions between the hardware all the way through to userland.
 \paragraph{}
 I'm especially attracted by companies which work with/on open source project
 like the Linux kernel, and which have a strong technical/innovation
-background. A company putting a lot of effort in R\&D is a plus, so as one
+background. A company putting a lot of effort in R\&D is a plus, so is 
 using agile software development methods and valorisating technical
 expertise.
 
@@ -119,22 +119,24 @@ expertise.
 \resheading{Experience}
 \prettylist
 \item
-  \ressubheading{MathEmbedded, Permanent Contract}{Bristol, England}{Embedded Engineer - Tech Lead}{Dec. 2010 - today}
+  \ressubheading{MathEmbedded, Permanent Contract}{Bristol, England}{Embedded
+    Engineer - Tech Lead}{Dec. 2010 - today}
   \begin{itemize}
-    \resitem{Split of grsecurity patch by features, implementation of regression tests for grsecurity}
-    \resitem{Boot time optimizations for different STBs running STLinux}
-    \resitem{Conception \& implementation of an automated remote tracing mechanism to certify the security of STBs}
-    \resitem{Requirements capture on customer's site}
-    \resitem{Support and documentation for the customer}
+    \resitem{Author of a kernel based tracing mechanism to automate \acro{STB}s certification}
+    \begin{itemize}
+      \resitem{Requirements capture on site, support and documentation}
+      \resitem{Design/Implementation of the low level plumbing, tech lead}
+    \end{itemize}
+    \resitem{\acro{Linux}/security trainer}
+    \resitem{Split of grsecurity patch for easier integration on Embedded devices}
+    \resitem{Boot time optimizations for different SH4 based HW}
   \end{itemize}
 \item
   \ressubheading{Scaleo Chip, Final Internship}{Sophia Antipolis, Alpes Maritimes}{Reducing power consumption on \acro{Linux-SMP SoC}}{Feb. 2010 - Sep. 2010}
   \begin{itemize}
-    \resitem{Implementation of cpu hotplug/hotunplug for sparc architectures on
-      \acro{Linux}} 
-      \resitem{Dynamically stop/start back CPU depending on system load}
-    \resitem{Development of Python/Qt UI to monitor the current consumption
-      of the platform}
+    \resitem{Implementation of cpu hotplug/hotunplug for sparc architecture for \acro{Linux}} 
+    \resitem{Dynamically stop/start back CPU depending on system load}
+    \resitem{Development of Python/Qt UI to monitor the current consumption of the platform through USB}
   \end{itemize}
 \item
   \ressubheading{DCNS, Internship}{Toulon, Var}{Improvement of the HMI of a sub-marine simulator}{Jun. 2008 - Aug. 2008}
@@ -155,12 +157,11 @@ expertise.
   \ressubheading{EPITA}{Paris XIII, Île de France}{Engineering degree -
     Embedded and Real Time systems}{Sep. 2008 - Sep. 2010}
   \begin{itemize}
-    \resitem{Member of the research laboratory LSE (Laboratoire Systèmes
+    \resitem{Member of the research laboratory \href{https://www.lse.epita.fr}{\acro{LSE}} (Laboratoire Systèmes
       d'Exploitation)}
   \end{itemize}
-\item
-  \ressubheading{USTV}{La Garde, Var}{Bachelor's degree in Systems
-    Informationnal Security}{Sep. 2004 - Apr. 2008}
+\item \ressubheading{USTV}{La Garde, Var}{Master 1 in Systems Informationnal
+    Security}{Sep. 2004 - Apr. 2008}
   \begin{itemize}
     \resitem{Tutoring of 1\textsuperscript{st} year students}
   \end{itemize}
@@ -220,15 +221,24 @@ expertise.
 
 
 \vspace{3pt} \projectitem{Scalopes.} During my internship at Scaleo Chip, I had
-the chance to work on the Linux kernel, notably for the leon3 sparc
-processor. My objective was to reduce the power consumption of an embedded
-platform in the context of the \href{http://www.scalopes.eu}{\acro{scalopes}} european project by implementing automatic clock gating in the Linux kernel. You can find a demo of my work on \href{http://www.dailymotion.com/video/xf6y9b_dynamic-hotplug-cpu-on-leon3_tech}{dailymotion} and the actual kernel module on \href{https://github.com/casasnovas/rm}{github}. As part of this project, I've also created an open source tool, \href{https://github.com/casasnovas/greth}{greth}, to interface the \acro{greth} open source hardware block from \acro{Gaisler.}
+the chance to work on the Linux kernel, specifically for the softcore leon3
+sparc processor. My objective was to reduce the power consumption of an
+embedded platform in the context of the
+\href{http://www.scalopes.eu}{\acro{scalopes}} european project by implementing
+automatic clock gating in the Linux kernel. You can find a demo of my work on
+\href{http://www.dailymotion.com/video/xf6y9b_dynamic-hotplug-cpu-on-leon3_tech}{dailymotion}
+and the actual kernel module on
+\href{https://github.com/casasnovas/rm}{github}. As part of this project, I've
+also created an open source tool,
+\href{https://github.com/casasnovas/greth}{greth}, to interface the
+\acro{greth} open source hardware block from \acro{Gaisler.}
 
 \vspace{3pt} \projectitem{Remote tracing.} Designed and implemented a remote
 tracing mechanism using the Linux kernel kprobes API to automate the security
 certification process of STBs for a known CA vendor. The system supports arm,
 mips, sh and x86 and can be driven remotely by a web UI. I've also participated
-in the customer's requirements capture on site.
+in the customer's requirements capture on site. I am hoping we'll be able to
+Open source this kernel module soon.
 
 \projectsep
 
