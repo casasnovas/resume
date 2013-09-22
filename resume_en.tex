@@ -38,11 +38,12 @@
 }
 
 \newcommand{\ressubheading}[4]{
-  \vspace{8pt}
+  \vspace{12pt}
   \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
     \textsc{#1} & #2 \\
     \textsl{#3} & \textit{#4} \\
   \end{tabular*}
+  \vspace{4pt}
 }
 
 \newcommand{\prettylist}[0]{
@@ -85,11 +86,11 @@
 \begin{tabular}{p{0.007\linewidth}l}
  & {\small \textcolor{\titlecolor}{920 TOEIC}} \\
  & {\small \textcolor{\bulletcolor}{\url{http://uk.linkedin.com/in/quentincasasnovas}}} \\
- & {\small \textcolor{\bulletcolor}{French nationality, 26 years old}} \\
- & {\small \textcolor{\bulletcolor}{quentin.casasnovas@gmail.com}} \\
- & {\small \textcolor{\bulletcolor}{39 \acro{Steamship House} - \acro{Gas Ferry Road}}} \\
- & {\small \textcolor{\bulletcolor}{BS1 6GL \acro{Bristol - England}}} \\
- & {\small \textcolor{\bulletcolor}{+44 7743 389 757}} \\
+ & {\small \textcolor{\bulletcolor}{French nationality, 27 years old}} \\
+ & {\small \textcolor{\bulletcolor}{quentin@dev-kernel.fr}} \\
+ & {\small \textcolor{\bulletcolor}{10 \acro{Av. du Trayas} - \acro{App. C14}}} \\
+ & {\small \textcolor{\bulletcolor}{06590 \acro{Theoule sur mer - France}}} \\
+ & {\small \textcolor{\bulletcolor}{+33 651 494 310}} \\
 \end{tabular}
 \end{minipage}
 \begin{minipage}{0.54\linewidth}
@@ -104,8 +105,8 @@
 \vspace{10pt}
 \paragraph{}
 My main area of interest is kernel development, shall it be low level kernel
-development such as device driver implementation, or at a higher level with
-userland interaction. I'm thrived by challenging projects involving
+development such as platform/device driver implementation, or at a higher level
+with userland interaction. I'm thrived by challenging projects involving
 complex interactions between the hardware all the way through to userland.
 \paragraph{}
 I'm especially attracted by companies which work with/on open source project
@@ -116,40 +117,55 @@ expertise.
 
 \end{minipage}
 
+\vspace{5pt}
 \resheading{Experience}
+\vspace{3pt}
 \prettylist
 \item
-  \ressubheading{MathEmbedded, Permanent Contract}{Bristol, England}{Embedded
-    Engineer - Tech Lead}{Dec. 2010 - today}
+  \ressubheading{Intel Ultra Mobility Group, Freelance (Dev Kernel Ltd)}{Sophia
+    Antipolis, France}{Linux/Android Embedded Engineer}{Sep. 2012 - today}
+  \begin{itemize}
+    \resitem{Various WiFi/BT chipset bring up on Intel future reference platforms}
+    \resitem{Rework Android WiFi stack so it can scale to different WiFi chipset}
+    \resitem{Bug fixing (mostly in-kernel) and customer support}
+    \resitem{Added ACPI support for SDIO bus in Linux kernel}
+  \end{itemize}
+\item
+  \ressubheading{MathEmbedded, Permanent Contract}{Bristol, England}{ Linux
+    Embedded Engineer - Tech Lead}{Dec. 2010 - Sep. 2012}
   \begin{itemize}
     \resitem{Author of a kernel based tracing mechanism to automate \acro{STB}s certification}
     \begin{itemize}
-      \resitem{Requirements capture on site, support and documentation}
       \resitem{Design/Implementation of the low level plumbing, tech lead}
+      \resitem{Requirements capture on site, support and documentation}
     \end{itemize}
-    \resitem{\acro{Linux}/security trainer}
     \resitem{Split of grsecurity patch for easier integration on Embedded devices}
     \resitem{Boot time optimizations for different SH4 based HW}
+    \resitem{\acro{Linux}/security trainer}
   \end{itemize}
-\item
-  \ressubheading{Scaleo Chip, Final Internship}{Sophia Antipolis, Alpes Maritimes}{Reducing power consumption on \acro{Linux-SMP SoC}}{Feb. 2010 - Sep. 2010}
+\vspace{1.1pt}\item
+  \ressubheading{Scaleo Chip, Final Internship}{Sophia Antipolis,
+    France}{Reducing power consumption on \acro{Linux-SMP SoC}}{Feb. 2010 -
+    Sep. 2010}
   \begin{itemize}
     \resitem{Implementation of cpu hotplug/hotunplug for sparc architecture for \acro{Linux}} 
     \resitem{Dynamically stop/start back CPU depending on system load}
     \resitem{Development of Python/Qt UI to monitor the current consumption of the platform through USB}
   \end{itemize}
-\item
-  \ressubheading{DCNS, Internship}{Toulon, Var}{Improvement of the HMI of a sub-marine simulator}{Jun. 2008 - Aug. 2008}
+\vspace{1.1pt}\item
+  \ressubheading{DCNS, Internship}{Toulon, France}{Improvement of the HMI of a sub-marine simulator}{Jun. 2008 - Aug. 2008}
   \begin{itemize}
     \resitem Development in\acro{OpenMotif/C}
   \end{itemize}
 \item
   \ressubheading{McDonald's Grand Ciel, Permanent contract}{La Garde,
-    Var}{Teammate then team leader}{Sep. 2004 - Apr. 2008}
+    France}{Teammate then team leader}{Sep. 2004 - Apr. 2008}
   \begin{itemize}
     \resitem Manager responsible for training and supplies the last two years
   \end{itemize}
 \end{itemize}
+
+\clearpage
 
 \resheading{Education}
 \prettylist
@@ -169,20 +185,16 @@ expertise.
   \ressubheading{High School Jean Aicard}{Hyères, Var}{Scientific High School
     Graduation - Math option}{Sep. 2001 - Jul. 2004}
   \begin{itemize}
-    \resitem{One semester in Toronto, Canada in complete immersion}
+    \resitem{One semester in Toronto, Canada}
   \end{itemize}
 \end{itemize}
-
-\clearpage
 
 \resheading{Skills}
 \begin{description}
 \item[Operating systems]
-  Strong\acro{GNU/Linux;} Basics with {Android}
+  Strong\acro{GNU/Linux; Android}
 \item[Languages]
   \acro{Expert in C; Already worked with C++, D, Python, Perl, Shell, Ada}
-\item[Conception]
-  \acro{Basics with Merise, UML}
 \item[Things I use every day]
   \acro{git, emacs, ssh, bitlbee, gcc, gentoo, latex, gdb, toothbrush}
 \end{description}
@@ -194,10 +206,9 @@ expertise.
   {\small
     \begin{itemize}
     \item[ ]
-    \item Fluent english speacker (920 TOEIC)
+    \item Fluent english speacker
     \item Good problem solving skills
     \item Deliver secure, well documented code
-    \item Web stuffs (SQL, php, javascript, ajax {\tiny\ldots} )
     \end{itemize}
   }
 \end{description}
@@ -207,65 +218,18 @@ expertise.
   {\small
     \begin{itemize}
     \item[ ]
-    \item Excellent adaptability
-    \item Autonomous
     \item Good communication skills
+    \item Excellent adaptability
     \item Strong team spirit
     \end{itemize}
   }
 \end{description}
 \end{tabular}
 
-\resheading{Relevants projects}
-\projectlist
-
-
-\vspace{3pt} \projectitem{Scalopes.} During my internship at Scaleo Chip, I had
-the chance to work on the Linux kernel, specifically for the softcore leon3
-sparc processor. My objective was to reduce the power consumption of an
-embedded platform in the context of the
-\href{http://www.scalopes.eu}{\acro{scalopes}} european project by implementing
-automatic clock gating in the Linux kernel. You can find a demo of my work on
-\href{http://www.dailymotion.com/video/xf6y9b_dynamic-hotplug-cpu-on-leon3_tech}{dailymotion}
-and the actual kernel module on
-\href{https://github.com/casasnovas/rm}{github}. As part of this project, I've
-also created an open source tool,
-\href{https://github.com/casasnovas/greth}{greth}, to interface the
-\acro{greth} open source hardware block from \acro{Gaisler.}
-
-\vspace{3pt} \projectitem{Remote tracing.} Designed and implemented a remote
-tracing mechanism using the Linux kernel kprobes API to automate the security
-certification process of STBs for a known CA vendor. The system supports arm,
-mips, sh and x86 and can be driven remotely by a web UI. I've also participated
-in the customer's requirements capture on site. I am hoping we'll be able to
-Open source this kernel module soon.
-
-\projectsep
-
-\projectitem{Amee} is a robotic project developped as part of my last year
-study. The principle is to use a FreeRunner cellphone (ARM420) as the robot
-brain, connecting it to a \acro{usb} board with an embedded AVR microchip,
-itself connected to various other parts of the robot (telemeter, CC motors,
-{\tiny\ldots}). The big interest lies in the huge number of sensors offered
-nativly by the phone (\acro{gps}, accelerometer, {\tiny\ldots}) and its
-connecting interface (\acro{wifi}, bluetooth, \acro{usb}, {\tiny\ldots}). You
-can find more about this project at \url{http://gistr.epita.fr} in the project
-area.
-
-\vspace{3pt} \projectitem{Multitouch driver.} As part of my last year study, I
-integrated a multitouch capable panel to the FreeRunner cellphone. I developed
-a Linux driver which supports \acro{Lumio USB} multitouch panel. I was in close
-collaboration with \acro{Lumio} software team, which invited me for a week in
-Israel to train them on the Linux driver, and extend the driver to their new
-firmware. You can find the source code and documentation of this driver on my
-\href{http://github.com/casasnovas/lumio_driver}{github} account.
-\projectlistend
-
 \resheading{Misc}
 \begin{description}
-\item Driver licence and coastal licence. I like fishing, reading thriller novels and I also love barbecues :) 
-\item I participate each year to the \acro{Defcon} security contest and appreciate particularly security wargames.
-\item I swim and play squash at least 3 times per week.
+\item Driver licence and coastal licence. I like fishing, reading and I love barbecues :) 
+\item I swim regularly and play squash at least 2 times per week.
 \end{description}
 
 \end{document}
